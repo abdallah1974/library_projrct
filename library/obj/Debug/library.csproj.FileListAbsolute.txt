@@ -1,0 +1,14 @@
+E:\collage\DB project\library\bin\Debug\library.exe.config
+E:\collage\DB project\library\bin\Debug\library.exe
+E:\collage\DB project\library\bin\Debug\library.pdb
+E:\collage\DB project\library\bin\Debug\Bunifu_UI_v1.52.dll
+E:\collage\DB project\library\obj\Debug\library.csproj.AssemblyReference.cache
+E:\collage\DB project\library\obj\Debug\library.Properties.Resources.resources
+E:\collage\DB project\library\obj\Debug\library.csproj.GenerateResource.cache
+E:\collage\DB project\library\obj\Debug\library.csproj.CoreCompileInputs.cache
+E:\collage\DB project\library\obj\Debug\library.csproj.CopyComplete
+E:\collage\DB project\library\obj\Debug\library.exe
+E:\collage\DB project\library\obj\Debug\library.pdb
+E:\collage\DB project\library\obj\Debug\library.books_tab.resources
+E:\collage\DB project\library\obj\Debug\library.reader_tab.resources
+E:\collage\DB project\library\bin\Debug\Guna.UI.dll
