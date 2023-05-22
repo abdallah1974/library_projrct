@@ -31,7 +31,7 @@ namespace library
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(readerSignIn));
             this.PasswordLogin_Reader = new System.Windows.Forms.TextBox();
-            this.IDLogin = new System.Windows.Forms.TextBox();
+            this.SSNLogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SingInLabel = new System.Windows.Forms.Label();
@@ -49,14 +49,14 @@ namespace library
             this.PasswordLogin_Reader.Size = new System.Drawing.Size(129, 20);
             this.PasswordLogin_Reader.TabIndex = 38;
             // 
-            // IDLogin
+            // SSNLogin
             // 
-            this.IDLogin.BackColor = System.Drawing.SystemColors.Window;
-            this.IDLogin.Location = new System.Drawing.Point(95, 229);
-            this.IDLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.IDLogin.Name = "IDLogin";
-            this.IDLogin.Size = new System.Drawing.Size(129, 20);
-            this.IDLogin.TabIndex = 37;
+            this.SSNLogin.BackColor = System.Drawing.SystemColors.Window;
+            this.SSNLogin.Location = new System.Drawing.Point(95, 229);
+            this.SSNLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.SSNLogin.Name = "SSNLogin";
+            this.SSNLogin.Size = new System.Drawing.Size(129, 20);
+            this.SSNLogin.TabIndex = 37;
             // 
             // label2
             // 
@@ -129,6 +129,7 @@ namespace library
             this.LoginSignin.Size = new System.Drawing.Size(122, 30);
             this.LoginSignin.TabIndex = 39;
             this.LoginSignin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LoginSignin.Click += new System.EventHandler(this.LoginSignin_Click);
             // 
             // readerSignIn
             // 
@@ -139,7 +140,7 @@ namespace library
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LoginSignin);
             this.Controls.Add(this.PasswordLogin_Reader);
-            this.Controls.Add(this.IDLogin);
+            this.Controls.Add(this.SSNLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SingInLabel);
@@ -157,7 +158,7 @@ namespace library
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 LoginSignin;
         private System.Windows.Forms.TextBox PasswordLogin_Reader;
-        private System.Windows.Forms.TextBox IDLogin;
+        private System.Windows.Forms.TextBox SSNLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label SingInLabel;
