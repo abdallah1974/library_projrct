@@ -1,7 +1,7 @@
 ﻿
 namespace library
 {
-    partial class reader_tab
+    partial class READER
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,35 @@ namespace library
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reader_tab));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(READER));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label_Reader = new System.Windows.Forms.Label();
             this.books_l = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ReadderAddress = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ReaderPhone = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ReaderName = new System.Windows.Forms.TextBox();
+            this.ReaderBirth = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label4 = new System.Windows.Forms.Label();
             this.ReaderGrid = new Guna.UI.WinForms.GunaDataGridView();
-            this.ReaderBirth = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ReaderName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ReaderPhone = new System.Windows.Forms.TextBox();
+            this.ReadderAddress = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ReaderSSN = new System.Windows.Forms.TextBox();
+            this.l_Name = new System.Windows.Forms.Label();
             this.ReaderDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ReaderEdit = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.READER_ADD = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ReaderEdit = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.READER_ADD = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReaderGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -81,7 +83,7 @@ namespace library
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(161, 520);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // label2
             // 
@@ -103,6 +105,7 @@ namespace library
             this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 6;
             this.label3.Text = "ORDERS";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label_Reader
             // 
@@ -114,6 +117,7 @@ namespace library
             this.label_Reader.Size = new System.Drawing.Size(80, 22);
             this.label_Reader.TabIndex = 4;
             this.label_Reader.Text = "READER";
+            this.label_Reader.Click += new System.EventHandler(this.label_Reader_Click);
             // 
             // books_l
             // 
@@ -125,6 +129,7 @@ namespace library
             this.books_l.Size = new System.Drawing.Size(69, 22);
             this.books_l.TabIndex = 2;
             this.books_l.Text = "BOOKS";
+            this.books_l.Click += new System.EventHandler(this.books_l_Click);
             // 
             // label1
             // 
@@ -137,121 +142,59 @@ namespace library
             this.label1.TabIndex = 1;
             this.label1.Text = "University Library";
             // 
-            // label8
+            // ReaderBirth
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(688, 47);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 21);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Birth Date";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(544, 50);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 21);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Address";
-            // 
-            // ReadderAddress
-            // 
-            this.ReadderAddress.BackColor = System.Drawing.SystemColors.Window;
-            this.ReadderAddress.Location = new System.Drawing.Point(548, 73);
-            this.ReadderAddress.Margin = new System.Windows.Forms.Padding(2);
-            this.ReadderAddress.Name = "ReadderAddress";
-            this.ReadderAddress.Size = new System.Drawing.Size(129, 20);
-            this.ReadderAddress.TabIndex = 27;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(398, 50);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 21);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Phone";
-            // 
-            // ReaderPhone
-            // 
-            this.ReaderPhone.BackColor = System.Drawing.SystemColors.Window;
-            this.ReaderPhone.Location = new System.Drawing.Point(402, 73);
-            this.ReaderPhone.Margin = new System.Windows.Forms.Padding(2);
-            this.ReaderPhone.Name = "ReaderPhone";
-            this.ReaderPhone.Size = new System.Drawing.Size(129, 20);
-            this.ReaderPhone.TabIndex = 25;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(253, 50);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 21);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Name";
-            // 
-            // ReaderName
-            // 
-            this.ReaderName.BackColor = System.Drawing.SystemColors.Window;
-            this.ReaderName.Location = new System.Drawing.Point(256, 73);
-            this.ReaderName.Margin = new System.Windows.Forms.Padding(2);
-            this.ReaderName.Name = "ReaderName";
-            this.ReaderName.Size = new System.Drawing.Size(129, 20);
-            this.ReaderName.TabIndex = 23;
+            this.ReaderBirth.BackColor = System.Drawing.Color.SeaGreen;
+            this.ReaderBirth.BorderRadius = 0;
+            this.ReaderBirth.ForeColor = System.Drawing.Color.White;
+            this.ReaderBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.ReaderBirth.FormatCustom = null;
+            this.ReaderBirth.Location = new System.Drawing.Point(743, 72);
+            this.ReaderBirth.Name = "ReaderBirth";
+            this.ReaderBirth.Size = new System.Drawing.Size(141, 24);
+            this.ReaderBirth.TabIndex = 47;
+            this.ReaderBirth.Value = new System.DateTime(2023, 5, 20, 3, 32, 27, 251);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(472, 7);
+            this.label4.Location = new System.Drawing.Point(483, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 33);
-            this.label4.TabIndex = 22;
+            this.label4.TabIndex = 36;
             this.label4.Text = "READER";
             // 
             // ReaderGrid
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ReaderGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.ReaderGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.ReaderGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ReaderGrid.BackgroundColor = System.Drawing.Color.White;
             this.ReaderGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ReaderGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ReaderGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReaderGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.ReaderGrid.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ReaderGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReaderGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.ReaderGrid.ColumnHeadersHeight = 26;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ReaderGrid.DefaultCellStyle = dataGridViewCellStyle9;
             this.ReaderGrid.EnableHeadersVisualStyles = false;
             this.ReaderGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ReaderGrid.Location = new System.Drawing.Point(174, 172);
+            this.ReaderGrid.Location = new System.Drawing.Point(176, 175);
             this.ReaderGrid.Margin = new System.Windows.Forms.Padding(2);
             this.ReaderGrid.Name = "ReaderGrid";
             this.ReaderGrid.RowHeadersVisible = false;
@@ -259,7 +202,7 @@ namespace library
             this.ReaderGrid.RowTemplate.Height = 24;
             this.ReaderGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ReaderGrid.Size = new System.Drawing.Size(722, 319);
-            this.ReaderGrid.TabIndex = 21;
+            this.ReaderGrid.TabIndex = 35;
             this.ReaderGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.ReaderGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ReaderGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -273,7 +216,7 @@ namespace library
             this.ReaderGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReaderGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.ReaderGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.ReaderGrid.ThemeStyle.HeaderStyle.Height = 4;
+            this.ReaderGrid.ThemeStyle.HeaderStyle.Height = 26;
             this.ReaderGrid.ThemeStyle.ReadOnly = false;
             this.ReaderGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.ReaderGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -282,19 +225,103 @@ namespace library
             this.ReaderGrid.ThemeStyle.RowsStyle.Height = 24;
             this.ReaderGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ReaderGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ReaderGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReaderGrid_CellContentClick);
             // 
-            // ReaderBirth
+            // label8
             // 
-            this.ReaderBirth.BackColor = System.Drawing.Color.SeaGreen;
-            this.ReaderBirth.BorderRadius = 0;
-            this.ReaderBirth.ForeColor = System.Drawing.Color.White;
-            this.ReaderBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.ReaderBirth.FormatCustom = null;
-            this.ReaderBirth.Location = new System.Drawing.Point(681, 72);
-            this.ReaderBirth.Name = "ReaderBirth";
-            this.ReaderBirth.Size = new System.Drawing.Size(200, 24);
-            this.ReaderBirth.TabIndex = 34;
-            this.ReaderBirth.Value = new System.DateTime(2023, 5, 20, 3, 32, 27, 251);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(739, 48);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(97, 21);
+            this.label8.TabIndex = 43;
+            this.label8.Text = "Birth Date";
+            // 
+            // ReaderName
+            // 
+            this.ReaderName.BackColor = System.Drawing.SystemColors.Window;
+            this.ReaderName.Location = new System.Drawing.Point(209, 76);
+            this.ReaderName.Margin = new System.Windows.Forms.Padding(2);
+            this.ReaderName.Name = "ReaderName";
+            this.ReaderName.Size = new System.Drawing.Size(111, 20);
+            this.ReaderName.TabIndex = 37;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(205, 48);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 21);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Name";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(599, 52);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 21);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "Address";
+            // 
+            // ReaderPhone
+            // 
+            this.ReaderPhone.BackColor = System.Drawing.SystemColors.Window;
+            this.ReaderPhone.Location = new System.Drawing.Point(470, 76);
+            this.ReaderPhone.Margin = new System.Windows.Forms.Padding(2);
+            this.ReaderPhone.Name = "ReaderPhone";
+            this.ReaderPhone.Size = new System.Drawing.Size(116, 20);
+            this.ReaderPhone.TabIndex = 39;
+            // 
+            // ReadderAddress
+            // 
+            this.ReadderAddress.BackColor = System.Drawing.SystemColors.Window;
+            this.ReadderAddress.Location = new System.Drawing.Point(603, 76);
+            this.ReadderAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.ReadderAddress.Name = "ReadderAddress";
+            this.ReadderAddress.Size = new System.Drawing.Size(129, 20);
+            this.ReadderAddress.TabIndex = 41;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(466, 48);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 21);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Phone";
+            // 
+            // ReaderSSN
+            // 
+            this.ReaderSSN.BackColor = System.Drawing.SystemColors.Window;
+            this.ReaderSSN.Location = new System.Drawing.Point(340, 76);
+            this.ReaderSSN.Margin = new System.Windows.Forms.Padding(2);
+            this.ReaderSSN.Name = "ReaderSSN";
+            this.ReaderSSN.Size = new System.Drawing.Size(111, 20);
+            this.ReaderSSN.TabIndex = 48;
+            // 
+            // l_Name
+            // 
+            this.l_Name.AutoSize = true;
+            this.l_Name.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_Name.ForeColor = System.Drawing.Color.Black;
+            this.l_Name.Location = new System.Drawing.Point(336, 48);
+            this.l_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.l_Name.Name = "l_Name";
+            this.l_Name.Size = new System.Drawing.Size(43, 21);
+            this.l_Name.TabIndex = 49;
+            this.l_Name.Text = "SSN";
             // 
             // ReaderDelete
             // 
@@ -314,12 +341,65 @@ namespace library
             this.ReaderDelete.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.ReaderDelete.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.ReaderDelete.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ReaderDelete.Location = new System.Drawing.Point(658, 115);
+            this.ReaderDelete.Location = new System.Drawing.Point(644, 118);
             this.ReaderDelete.Margin = new System.Windows.Forms.Padding(4);
             this.ReaderDelete.Name = "ReaderDelete";
             this.ReaderDelete.Size = new System.Drawing.Size(136, 33);
-            this.ReaderDelete.TabIndex = 33;
+            this.ReaderDelete.TabIndex = 46;
             this.ReaderDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReaderDelete.Click += new System.EventHandler(this.ReaderDelete_Click);
+            // 
+            // ReaderEdit
+            // 
+            this.ReaderEdit.ActiveBorderThickness = 1;
+            this.ReaderEdit.ActiveCornerRadius = 20;
+            this.ReaderEdit.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
+            this.ReaderEdit.ActiveForecolor = System.Drawing.Color.LightSalmon;
+            this.ReaderEdit.ActiveLineColor = System.Drawing.Color.LimeGreen;
+            this.ReaderEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ReaderEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ReaderEdit.BackgroundImage")));
+            this.ReaderEdit.ButtonText = "EDIT";
+            this.ReaderEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ReaderEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReaderEdit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ReaderEdit.IdleBorderThickness = 1;
+            this.ReaderEdit.IdleCornerRadius = 20;
+            this.ReaderEdit.IdleFillColor = System.Drawing.Color.PaleGreen;
+            this.ReaderEdit.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.ReaderEdit.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.ReaderEdit.Location = new System.Drawing.Point(450, 118);
+            this.ReaderEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.ReaderEdit.Name = "ReaderEdit";
+            this.ReaderEdit.Size = new System.Drawing.Size(136, 33);
+            this.ReaderEdit.TabIndex = 45;
+            this.ReaderEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ReaderEdit.Click += new System.EventHandler(this.ReaderEdit_Click);
+            // 
+            // READER_ADD
+            // 
+            this.READER_ADD.ActiveBorderThickness = 1;
+            this.READER_ADD.ActiveCornerRadius = 20;
+            this.READER_ADD.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
+            this.READER_ADD.ActiveForecolor = System.Drawing.Color.LightSalmon;
+            this.READER_ADD.ActiveLineColor = System.Drawing.Color.LimeGreen;
+            this.READER_ADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.READER_ADD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("READER_ADD.BackgroundImage")));
+            this.READER_ADD.ButtonText = "ADD";
+            this.READER_ADD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.READER_ADD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.READER_ADD.ForeColor = System.Drawing.Color.SeaGreen;
+            this.READER_ADD.IdleBorderThickness = 1;
+            this.READER_ADD.IdleCornerRadius = 20;
+            this.READER_ADD.IdleFillColor = System.Drawing.Color.PaleGreen;
+            this.READER_ADD.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.READER_ADD.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.READER_ADD.Location = new System.Drawing.Point(251, 118);
+            this.READER_ADD.Margin = new System.Windows.Forms.Padding(4);
+            this.READER_ADD.Name = "READER_ADD";
+            this.READER_ADD.Size = new System.Drawing.Size(136, 33);
+            this.READER_ADD.TabIndex = 44;
+            this.READER_ADD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.READER_ADD.Click += new System.EventHandler(this.READER_ADD_Click);
             // 
             // pictureBox4
             // 
@@ -365,66 +445,17 @@ namespace library
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // ReaderEdit
-            // 
-            this.ReaderEdit.ActiveBorderThickness = 1;
-            this.ReaderEdit.ActiveCornerRadius = 20;
-            this.ReaderEdit.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
-            this.ReaderEdit.ActiveForecolor = System.Drawing.Color.LightSalmon;
-            this.ReaderEdit.ActiveLineColor = System.Drawing.Color.LimeGreen;
-            this.ReaderEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ReaderEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ReaderEdit.BackgroundImage")));
-            this.ReaderEdit.ButtonText = "EDIT";
-            this.ReaderEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ReaderEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReaderEdit.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ReaderEdit.IdleBorderThickness = 1;
-            this.ReaderEdit.IdleCornerRadius = 20;
-            this.ReaderEdit.IdleFillColor = System.Drawing.Color.PaleGreen;
-            this.ReaderEdit.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.ReaderEdit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ReaderEdit.Location = new System.Drawing.Point(448, 115);
-            this.ReaderEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.ReaderEdit.Name = "ReaderEdit";
-            this.ReaderEdit.Size = new System.Drawing.Size(136, 33);
-            this.ReaderEdit.TabIndex = 32;
-            this.ReaderEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // READER_ADD
-            // 
-            this.READER_ADD.ActiveBorderThickness = 1;
-            this.READER_ADD.ActiveCornerRadius = 20;
-            this.READER_ADD.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
-            this.READER_ADD.ActiveForecolor = System.Drawing.Color.LightSalmon;
-            this.READER_ADD.ActiveLineColor = System.Drawing.Color.LimeGreen;
-            this.READER_ADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.READER_ADD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("READER_ADD.BackgroundImage")));
-            this.READER_ADD.ButtonText = "ADD";
-            this.READER_ADD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.READER_ADD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.READER_ADD.ForeColor = System.Drawing.Color.SeaGreen;
-            this.READER_ADD.IdleBorderThickness = 1;
-            this.READER_ADD.IdleCornerRadius = 20;
-            this.READER_ADD.IdleFillColor = System.Drawing.Color.PaleGreen;
-            this.READER_ADD.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.READER_ADD.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.READER_ADD.Location = new System.Drawing.Point(249, 115);
-            this.READER_ADD.Margin = new System.Windows.Forms.Padding(4);
-            this.READER_ADD.Name = "READER_ADD";
-            this.READER_ADD.Size = new System.Drawing.Size(136, 33);
-            this.READER_ADD.TabIndex = 31;
-            this.READER_ADD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.READER_ADD.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // reader_tab
+            // READER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(915, 520);
+            this.ControlBox = false;
+            this.Controls.Add(this.ReaderSSN);
+            this.Controls.Add(this.l_Name);
             this.Controls.Add(this.ReaderBirth);
             this.Controls.Add(this.ReaderDelete);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ReaderEdit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.READER_ADD);
@@ -436,10 +467,13 @@ namespace library
             this.Controls.Add(this.ReaderPhone);
             this.Controls.Add(this.ReadderAddress);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "reader_tab";
-            this.Text = "reader_tab";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "READER";
+            this.ShowIcon = false;
+            this.Text = "READER";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ReaderGrid)).EndInit();
@@ -464,18 +498,20 @@ namespace library
         private System.Windows.Forms.Label books_l;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuDatepicker ReaderBirth;
         private Bunifu.Framework.UI.BunifuThinButton2 ReaderDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 ReaderEdit;
+        private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 READER_ADD;
+        private Guna.UI.WinForms.GunaDataGridView ReaderGrid;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox ReaderName;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox ReaderPhone;
         private System.Windows.Forms.TextBox ReadderAddress;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox ReaderPhone;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox ReaderName;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI.WinForms.GunaDataGridView ReaderGrid;
-        private Bunifu.Framework.UI.BunifuDatepicker ReaderBirth;
+        private System.Windows.Forms.TextBox ReaderSSN;
+        private System.Windows.Forms.Label l_Name;
     }
 }

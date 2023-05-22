@@ -25,12 +25,14 @@ namespace library
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            READER b = new READER();
+            b.Show();
+            this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -47,7 +49,7 @@ namespace library
         private void ShowMan()
         {
             Con.Open();
-            String Query = "select NAME, AUTHOR, CATEGORY, NO_REMAINING from BOOK";
+            String Query = "select BOOKID, NAME, AUTHOR, CATEGORY, NO_REMAINING from BOOK ORDER BY BOOKID";
             SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -65,7 +67,7 @@ namespace library
                 try
                 {
                     Con.Open();
-                    SqlCommand cm = new SqlCommand("SELECT count(*) from BOOK",Con);
+                    SqlCommand cm = new SqlCommand("SELECT MAX(BOOKID) from BOOK",Con);
                     int res = (int)cm.ExecuteScalar();
                     SqlCommand cmd = new SqlCommand("insert into BOOK(BOOKID,ID,CATEGORY,AUTHOR,NAME,NO_REMAINING)values(@ID,@i,@BC,@BA,@BN,@BR)", Con);
                     //cmd.Parameters.AddWithValue("@global.counter", global.counter, 1, "@BC", BOOKCATEGORY, "@BA", BOOKADD, "@BN", BOOKNAME, "@BR", BOOKINSTOCK);
@@ -91,16 +93,17 @@ namespace library
         int Key = 0;
         private void BookTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             BOOKNAME.Text = BookTable.SelectedRows[0].Cells[1].Value.ToString();
             BOOKAUTHOR.Text = BookTable.SelectedRows[0].Cells[2].Value.ToString();
-            BOOKINSTOCK.Text = BookTable.SelectedRows[0].Cells[3].Value.ToString();
-            BOOKCATEGORY.SelectedItem = BookTable.SelectedRows[0].Cells[4].Value.ToString();
+            BOOKINSTOCK.Text = BookTable.SelectedRows[0].Cells[4].Value.ToString();
+            BOOKCATEGORY.SelectedItem = BookTable.SelectedRows[0].Cells[3].Value.ToString();
             if (BOOKNAME.Text == "") {
                 Key = 0;
             }
             else
             {
-                Key = Convert.ToInt32(BookTable.SelectedRows[0].Cells[1].Value.ToString());
+                Key = Convert.ToInt32(BookTable.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 
@@ -117,7 +120,7 @@ namespace library
                     Con.Open();
                     /*SqlCommand cm = new SqlCommand("SELECT count(*) from BOOK", Con);
                     int res = (int)cm.ExecuteScalar();*/
-                    SqlCommand cmd = new SqlCommand("delete from BOOK where BOOKID = @Mkey)", Con);
+                    SqlCommand cmd = new SqlCommand("delete from BOOK where BOOKID = @Mkey", Con);
                     //cmd.Parameters.AddWithValue("@global.counter", global.counter, 1, "@BC", BOOKCATEGORY, "@BA", BOOKADD, "@BN", BOOKNAME, "@BR", BOOKINSTOCK);
                     //cmd.Parameters.AddWithValue("@global.counter", global.counter);
                     cmd.Parameters.AddWithValue("@Mkey", Key);
@@ -131,6 +134,54 @@ namespace library
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void BOOKEDIT_Click(object sender, EventArgs e)
+        {
+            if (BOOKNAME.Text == "" || BOOKAUTHOR.Text == "" || BOOKINSTOCK.Text == "")
+            {
+                MessageBox.Show("Missing information");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    /*SqlCommand cm = new SqlCommand("SELECT MAX(BOOKID) from BOOK", Con);
+                    int res = (int)cm.ExecuteScalar();*/
+                    SqlCommand cmd = new SqlCommand("update BOOK set ID = @i, CATEGORY = @BC,AUTHOR = @BA,NAME = @BN,NO_REMAINING =@BR where BOOKID = @Mkey", Con);
+                    //cmd.Parameters.AddWithValue("@global.counter", global.counter, 1, "@BC", BOOKCATEGORY, "@BA", BOOKADD, "@BN", BOOKNAME, "@BR", BOOKINSTOCK);
+                    //cmd.Parameters.AddWithValue("@global.counter", global.counter);
+                    //cmd.Parameters.AddWithValue("@ID", res + 1);
+                    cmd.Parameters.AddWithValue("@i", 1);
+                    cmd.Parameters.AddWithValue("@BC", BOOKCATEGORY.SelectedItem);
+                    cmd.Parameters.AddWithValue("@BA", BOOKAUTHOR.Text);
+                    cmd.Parameters.AddWithValue("@BN", BOOKNAME.Text);
+                    cmd.Parameters.AddWithValue("@BR", BOOKINSTOCK.Text);
+                    cmd.Parameters.AddWithValue("@Mkey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Book Updated");
+                    global.counter++;
+                    Con.Close();
+                    ShowMan();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            order b = new order();
+            b.Show();
+            this.Hide();
+        }
+
+        private void BOOKNAME_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

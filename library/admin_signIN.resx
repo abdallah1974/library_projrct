@@ -117,23 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="man-in-suit-and-tie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\man-in-suit-and-tie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="My_project_1-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\My_project_1-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="library uni" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\library uni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="watermelon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\watermelon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LoginSignin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHoAAAAeCAYAAADjPAqoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIwSURBVGhD7ZrNK0RRGIf9RZY2iggLSSj5KML4SmKEkSH5
+        /pqaGGLIxChfEZOpkaQmIltRUxSlWKgpC0VZvPqdyXWHw/qeOW+/nt25dxbPPee875yTFCaODmHRmoRF
+        axIWrUlYtCZh0ZrkX9FHH8fkjixRZbCbCjdbKW2xhpJdJYxFgA94KQ84aOJqgQ7eD0324vOn6Pm7VfGi
+        4n07dVwPUt/9OLmiU+T98DIWAT7gxREZotJQm/A1fuU1WfzOL9H4KmwHvZS/3UzuF4/0BxhrMv06I4QX
+        77TT/mvIZPWHaEjO8TeS/bJf+iJGDZy3I5S71kS7L0HDbZxozGSWnBhgScf+/eXWEI09Gcu17CFGTarD
+        XdRz4f4WjeoaGznvyYnF7NscZfnraSsaiIlGaY5NXDaYUZuGcye1nYzFRGf56kWJLhvIqM3wk4vSF20x
+        0Wi+x57d0oGM2mD5hl8hOsVTIUpy2UBGbTCB4VeIRmWGCk02kFEbtMtom4VoNNYZPpuY5rLBjLoU7bWQ
+        52Y5JhrpPJukulOndDCjJjijwIEU/Bqi0UsXbLTQwMOk9CFGLfCfSKav1jjRMkQjaKyz/Q1cgSsOJOdt
+        NNHSw7rhNk40svK4JQ42Gs97pC9hrE1XZFjMZLNk5JdoBMu4/WRUfBWo2vivUWuD40nsx7g7UBbolF5A
+        kIr+Cr4KlOapc1VxNxsYa4E+GUUXbgOZ/Znzr2hO4oRFaxIWrUlYtCZh0VokTJ+SKwdHx8/QUQAAAABJ
+        RU5ErkJggg==
+</value>
   </data>
 </root>

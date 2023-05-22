@@ -39,14 +39,10 @@ namespace library
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label_Reader = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.books_l = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.BookTable = new Guna.UI.WinForms.GunaDataGridView();
@@ -59,15 +55,19 @@ namespace library
             this.BOOKINSTOCK = new System.Windows.Forms.TextBox();
             this.BOOKCATEGORY = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.BOOKADD = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.BOOKEDIT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BOOKDELETE = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BOOKEDIT = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.BOOKADD = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BookTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BookTable)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -102,16 +102,6 @@ namespace library
             this.label2.TabIndex = 8;
             this.label2.Text = "V1.0";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::library.Properties.Resources.bill;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 381);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(49, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -120,16 +110,7 @@ namespace library
             this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 6;
             this.label3.Text = "ORDERS";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::library.Properties.Resources.man_in_suit_and_tie;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 286);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label_Reader
             // 
@@ -140,16 +121,6 @@ namespace library
             this.label_Reader.TabIndex = 4;
             this.label_Reader.Text = "READER";
             this.label_Reader.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::library.Properties.Resources.book;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 199);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
             // 
             // books_l
             // 
@@ -169,16 +140,6 @@ namespace library
             this.label1.TabIndex = 1;
             this.label1.Text = "University Library";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::library.Properties.Resources.library_uni;
-            this.pictureBox1.Location = new System.Drawing.Point(64, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // bunifuElipse2
             // 
@@ -217,7 +178,7 @@ namespace library
             this.BookTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.BookTable.EnableHeadersVisualStyles = false;
             this.BookTable.GridColor = System.Drawing.Color.White;
-            this.BookTable.Location = new System.Drawing.Point(234, 226);
+            this.BookTable.Location = new System.Drawing.Point(233, 233);
             this.BookTable.Name = "BookTable";
             this.BookTable.RowHeadersVisible = false;
             this.BookTable.RowHeadersWidth = 51;
@@ -266,6 +227,7 @@ namespace library
             this.BOOKNAME.Name = "BOOKNAME";
             this.BOOKNAME.Size = new System.Drawing.Size(171, 27);
             this.BOOKNAME.TabIndex = 10;
+            this.BOOKNAME.TextChanged += new System.EventHandler(this.BOOKNAME_TextChanged);
             // 
             // NAMELABEL
             // 
@@ -345,6 +307,58 @@ namespace library
             this.label8.TabIndex = 17;
             this.label8.Text = "Category";
             // 
+            // BOOKDELETE
+            // 
+            this.BOOKDELETE.ActiveBorderThickness = 1;
+            this.BOOKDELETE.ActiveCornerRadius = 20;
+            this.BOOKDELETE.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
+            this.BOOKDELETE.ActiveForecolor = System.Drawing.Color.LightSalmon;
+            this.BOOKDELETE.ActiveLineColor = System.Drawing.Color.LimeGreen;
+            this.BOOKDELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BOOKDELETE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BOOKDELETE.BackgroundImage")));
+            this.BOOKDELETE.ButtonText = "DELETE";
+            this.BOOKDELETE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BOOKDELETE.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOOKDELETE.ForeColor = System.Drawing.Color.SeaGreen;
+            this.BOOKDELETE.IdleBorderThickness = 1;
+            this.BOOKDELETE.IdleCornerRadius = 20;
+            this.BOOKDELETE.IdleFillColor = System.Drawing.Color.PaleGreen;
+            this.BOOKDELETE.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.BOOKDELETE.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.BOOKDELETE.Location = new System.Drawing.Point(879, 155);
+            this.BOOKDELETE.Margin = new System.Windows.Forms.Padding(5);
+            this.BOOKDELETE.Name = "BOOKDELETE";
+            this.BOOKDELETE.Size = new System.Drawing.Size(181, 41);
+            this.BOOKDELETE.TabIndex = 20;
+            this.BOOKDELETE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BOOKDELETE.Click += new System.EventHandler(this.BOOKDELETE_Click);
+            // 
+            // BOOKEDIT
+            // 
+            this.BOOKEDIT.ActiveBorderThickness = 1;
+            this.BOOKEDIT.ActiveCornerRadius = 20;
+            this.BOOKEDIT.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
+            this.BOOKEDIT.ActiveForecolor = System.Drawing.Color.LightSalmon;
+            this.BOOKEDIT.ActiveLineColor = System.Drawing.Color.LimeGreen;
+            this.BOOKEDIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BOOKEDIT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BOOKEDIT.BackgroundImage")));
+            this.BOOKEDIT.ButtonText = "EDIT";
+            this.BOOKEDIT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BOOKEDIT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BOOKEDIT.ForeColor = System.Drawing.Color.SeaGreen;
+            this.BOOKEDIT.IdleBorderThickness = 1;
+            this.BOOKEDIT.IdleCornerRadius = 20;
+            this.BOOKEDIT.IdleFillColor = System.Drawing.Color.PaleGreen;
+            this.BOOKEDIT.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.BOOKEDIT.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.BOOKEDIT.Location = new System.Drawing.Point(599, 155);
+            this.BOOKEDIT.Margin = new System.Windows.Forms.Padding(5);
+            this.BOOKEDIT.Name = "BOOKEDIT";
+            this.BOOKEDIT.Size = new System.Drawing.Size(181, 41);
+            this.BOOKEDIT.TabIndex = 19;
+            this.BOOKEDIT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BOOKEDIT.Click += new System.EventHandler(this.BOOKEDIT_Click);
+            // 
             // BOOKADD
             // 
             this.BOOKADD.ActiveBorderThickness = 1;
@@ -371,56 +385,45 @@ namespace library
             this.BOOKADD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.BOOKADD.Click += new System.EventHandler(this.BOOKADD_Click);
             // 
-            // BOOKEDIT
+            // pictureBox4
             // 
-            this.BOOKEDIT.ActiveBorderThickness = 1;
-            this.BOOKEDIT.ActiveCornerRadius = 20;
-            this.BOOKEDIT.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
-            this.BOOKEDIT.ActiveForecolor = System.Drawing.Color.LightSalmon;
-            this.BOOKEDIT.ActiveLineColor = System.Drawing.Color.LimeGreen;
-            this.BOOKEDIT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.BOOKEDIT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BOOKEDIT.BackgroundImage")));
-            this.BOOKEDIT.ButtonText = "EDIT";
-            this.BOOKEDIT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BOOKEDIT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOOKEDIT.ForeColor = System.Drawing.Color.SeaGreen;
-            this.BOOKEDIT.IdleBorderThickness = 1;
-            this.BOOKEDIT.IdleCornerRadius = 20;
-            this.BOOKEDIT.IdleFillColor = System.Drawing.Color.PaleGreen;
-            this.BOOKEDIT.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.BOOKEDIT.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.BOOKEDIT.Location = new System.Drawing.Point(599, 155);
-            this.BOOKEDIT.Margin = new System.Windows.Forms.Padding(5);
-            this.BOOKEDIT.Name = "BOOKEDIT";
-            this.BOOKEDIT.Size = new System.Drawing.Size(181, 41);
-            this.BOOKEDIT.TabIndex = 19;
-            this.BOOKEDIT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox4.Image = global::library.Properties.Resources.bill;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 381);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
             // 
-            // BOOKDELETE
+            // pictureBox3
             // 
-            this.BOOKDELETE.ActiveBorderThickness = 1;
-            this.BOOKDELETE.ActiveCornerRadius = 20;
-            this.BOOKDELETE.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
-            this.BOOKDELETE.ActiveForecolor = System.Drawing.Color.LightSalmon;
-            this.BOOKDELETE.ActiveLineColor = System.Drawing.Color.LimeGreen;
-            this.BOOKDELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.BOOKDELETE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BOOKDELETE.BackgroundImage")));
-            this.BOOKDELETE.ButtonText = "DELETE";
-            this.BOOKDELETE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BOOKDELETE.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BOOKDELETE.ForeColor = System.Drawing.Color.SeaGreen;
-            this.BOOKDELETE.IdleBorderThickness = 1;
-            this.BOOKDELETE.IdleCornerRadius = 20;
-            this.BOOKDELETE.IdleFillColor = System.Drawing.Color.PaleGreen;
-            this.BOOKDELETE.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.BOOKDELETE.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.BOOKDELETE.Location = new System.Drawing.Point(879, 155);
-            this.BOOKDELETE.Margin = new System.Windows.Forms.Padding(5);
-            this.BOOKDELETE.Name = "BOOKDELETE";
-            this.BOOKDELETE.Size = new System.Drawing.Size(181, 41);
-            this.BOOKDELETE.TabIndex = 20;
-            this.BOOKDELETE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BOOKDELETE.Click += new System.EventHandler(this.BOOKDELETE_Click);
+            this.pictureBox3.Image = global::library.Properties.Resources.man_in_suit_and_tie;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 286);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::library.Properties.Resources.book;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 199);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::library.Properties.Resources.library_uni;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // books_tab
             // 
@@ -450,11 +453,11 @@ namespace library
             this.Load += new System.EventHandler(this.label1_Click);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BookTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BookTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

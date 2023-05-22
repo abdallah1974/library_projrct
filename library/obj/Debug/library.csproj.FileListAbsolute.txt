@@ -12,3 +12,9 @@ E:\collage\DB project\library\obj\Debug\library.pdb
 E:\collage\DB project\library\obj\Debug\library.books_tab.resources
 E:\collage\DB project\library\obj\Debug\library.reader_tab.resources
 E:\collage\DB project\library\bin\Debug\Guna.UI.dll
+E:\collage\DB project\library\obj\Debug\library.READER.resources
+E:\collage\DB project\library\obj\Debug\library.order.resources
+E:\collage\DB project\library\obj\Debug\library.admin_signIN.resources
+E:\collage\DB project\library\obj\Debug\library.librerian_register.resources
+E:\collage\DB project\library\obj\Debug\library.readerSignIn.resources
+E:\collage\DB project\library\obj\Debug\library.ReaderSignUP.resources
