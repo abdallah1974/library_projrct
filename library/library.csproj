@@ -60,6 +60,12 @@
     <Compile Include="admin_signIN.Designer.cs">
       <DependentUpon>admin_signIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose.Designer.cs">
+      <DependentUpon>choose.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,18 @@
     <Compile Include="ReaderSignUP.Designer.cs">
       <DependentUpon>ReaderSignUP.cs</DependentUpon>
     </Compile>
+    <Compile Include="READER_Joind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="READER_Joind.Designer.cs">
+      <DependentUpon>READER_Joind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reader_MyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reader_MyOrder.Designer.cs">
+      <DependentUpon>Reader_MyOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="reader_tab.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="admin_signIN.resx">
       <DependentUpon>admin_signIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choose.resx">
+      <DependentUpon>choose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -140,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReaderSignUP.resx">
       <DependentUpon>ReaderSignUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="READER_Joind.resx">
+      <DependentUpon>READER_Joind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reader_MyOrder.resx">
+      <DependentUpon>Reader_MyOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reader_tab.resx">
       <DependentUpon>reader_tab.cs</DependentUpon>

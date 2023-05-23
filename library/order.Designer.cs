@@ -29,10 +29,22 @@ namespace library
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(order));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(order));
+            this.BOOKNAME = new System.Windows.Forms.TextBox();
+            this.l_Name = new System.Windows.Forms.Label();
+            this.BORROWDATE = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.READERSSN = new System.Windows.Forms.TextBox();
+            this.OrderGrid = new Guna.UI.WinForms.GunaDataGridView();
+            this.OrderDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.OrderEdit = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ORDER_ADD = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -43,149 +55,18 @@ namespace library
             this.books_l = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BOOKNAME = new System.Windows.Forms.TextBox();
-            this.l_Name = new System.Windows.Forms.Label();
-            this.BORROWDATE = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.READERSSN = new System.Windows.Forms.TextBox();
-            this.ORDER_ADD = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.OrderGrid = new Guna.UI.WinForms.GunaDataGridView();
-            this.OrderEdit = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.OrderDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label_Reader);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.books_l);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(161, 520);
-            this.panel1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 491);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "V1.0";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::library.Properties.Resources.bill;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 310);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(37, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 12F);
-            this.label3.Location = new System.Drawing.Point(54, 318);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "ORDERS";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::library.Properties.Resources.man_in_suit_and_tie;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 232);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label_Reader
-            // 
-            this.label_Reader.AutoSize = true;
-            this.label_Reader.Font = new System.Drawing.Font("Montserrat", 12F);
-            this.label_Reader.Location = new System.Drawing.Point(54, 241);
-            this.label_Reader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_Reader.Name = "label_Reader";
-            this.label_Reader.Size = new System.Drawing.Size(80, 22);
-            this.label_Reader.TabIndex = 4;
-            this.label_Reader.Text = "READER";
-            this.label_Reader.Click += new System.EventHandler(this.label_Reader_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::library.Properties.Resources.book;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 162);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // books_l
-            // 
-            this.books_l.AutoSize = true;
-            this.books_l.Font = new System.Drawing.Font("Montserrat", 12F);
-            this.books_l.Location = new System.Drawing.Point(54, 171);
-            this.books_l.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.books_l.Name = "books_l";
-            this.books_l.Size = new System.Drawing.Size(69, 22);
-            this.books_l.TabIndex = 2;
-            this.books_l.Text = "BOOKS";
-            this.books_l.Click += new System.EventHandler(this.books_l_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "University Library";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::library.Properties.Resources.library_uni;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // BOOKNAME
             // 
             this.BOOKNAME.BackColor = System.Drawing.SystemColors.Window;
-            this.BOOKNAME.Location = new System.Drawing.Point(448, 86);
+            this.BOOKNAME.Location = new System.Drawing.Point(578, 86);
             this.BOOKNAME.Margin = new System.Windows.Forms.Padding(2);
             this.BOOKNAME.Name = "BOOKNAME";
             this.BOOKNAME.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -198,7 +79,7 @@ namespace library
             this.l_Name.AutoSize = true;
             this.l_Name.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_Name.ForeColor = System.Drawing.Color.Black;
-            this.l_Name.Location = new System.Drawing.Point(472, 58);
+            this.l_Name.Location = new System.Drawing.Point(602, 58);
             this.l_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.l_Name.Name = "l_Name";
             this.l_Name.Size = new System.Drawing.Size(107, 21);
@@ -213,7 +94,7 @@ namespace library
             this.BORROWDATE.ForeColor = System.Drawing.Color.White;
             this.BORROWDATE.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.BORROWDATE.FormatCustom = null;
-            this.BORROWDATE.Location = new System.Drawing.Point(650, 86);
+            this.BORROWDATE.Location = new System.Drawing.Point(780, 86);
             this.BORROWDATE.Name = "BORROWDATE";
             this.BORROWDATE.Size = new System.Drawing.Size(170, 24);
             this.BORROWDATE.TabIndex = 62;
@@ -224,7 +105,7 @@ namespace library
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(452, 10);
+            this.label4.Location = new System.Drawing.Point(634, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 33);
@@ -237,7 +118,7 @@ namespace library
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(665, 58);
+            this.label8.Location = new System.Drawing.Point(795, 58);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(142, 21);
@@ -250,7 +131,7 @@ namespace library
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(253, 58);
+            this.label5.Location = new System.Drawing.Point(383, 58);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 21);
@@ -263,7 +144,7 @@ namespace library
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(472, 58);
+            this.label6.Location = new System.Drawing.Point(602, 58);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 21);
@@ -273,38 +154,12 @@ namespace library
             // READERSSN
             // 
             this.READERSSN.BackColor = System.Drawing.SystemColors.Window;
-            this.READERSSN.Location = new System.Drawing.Point(248, 86);
+            this.READERSSN.Location = new System.Drawing.Point(378, 86);
             this.READERSSN.Margin = new System.Windows.Forms.Padding(2);
             this.READERSSN.Name = "READERSSN";
             this.READERSSN.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.READERSSN.Size = new System.Drawing.Size(163, 20);
             this.READERSSN.TabIndex = 65;
-            // 
-            // ORDER_ADD
-            // 
-            this.ORDER_ADD.ActiveBorderThickness = 1;
-            this.ORDER_ADD.ActiveCornerRadius = 20;
-            this.ORDER_ADD.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
-            this.ORDER_ADD.ActiveForecolor = System.Drawing.Color.LightSalmon;
-            this.ORDER_ADD.ActiveLineColor = System.Drawing.Color.LimeGreen;
-            this.ORDER_ADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ORDER_ADD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ORDER_ADD.BackgroundImage")));
-            this.ORDER_ADD.ButtonText = "ADD";
-            this.ORDER_ADD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ORDER_ADD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ORDER_ADD.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ORDER_ADD.IdleBorderThickness = 1;
-            this.ORDER_ADD.IdleCornerRadius = 20;
-            this.ORDER_ADD.IdleFillColor = System.Drawing.Color.PaleGreen;
-            this.ORDER_ADD.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.ORDER_ADD.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ORDER_ADD.Location = new System.Drawing.Point(257, 128);
-            this.ORDER_ADD.Margin = new System.Windows.Forms.Padding(4);
-            this.ORDER_ADD.Name = "ORDER_ADD";
-            this.ORDER_ADD.Size = new System.Drawing.Size(136, 33);
-            this.ORDER_ADD.TabIndex = 66;
-            this.ORDER_ADD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ORDER_ADD.Click += new System.EventHandler(this.ORDER_ADD_Click);
             // 
             // OrderGrid
             // 
@@ -334,14 +189,14 @@ namespace library
             this.OrderGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.OrderGrid.EnableHeadersVisualStyles = false;
             this.OrderGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.OrderGrid.Location = new System.Drawing.Point(182, 185);
+            this.OrderGrid.Location = new System.Drawing.Point(231, 189);
             this.OrderGrid.Margin = new System.Windows.Forms.Padding(2);
             this.OrderGrid.Name = "OrderGrid";
             this.OrderGrid.RowHeadersVisible = false;
             this.OrderGrid.RowHeadersWidth = 51;
             this.OrderGrid.RowTemplate.Height = 24;
             this.OrderGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrderGrid.Size = new System.Drawing.Size(722, 319);
+            this.OrderGrid.Size = new System.Drawing.Size(962, 393);
             this.OrderGrid.TabIndex = 67;
             this.OrderGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.OrderGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -367,32 +222,6 @@ namespace library
             this.OrderGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.OrderGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OrderGrid_CellContentClick);
             // 
-            // OrderEdit
-            // 
-            this.OrderEdit.ActiveBorderThickness = 1;
-            this.OrderEdit.ActiveCornerRadius = 20;
-            this.OrderEdit.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
-            this.OrderEdit.ActiveForecolor = System.Drawing.Color.LightSalmon;
-            this.OrderEdit.ActiveLineColor = System.Drawing.Color.LimeGreen;
-            this.OrderEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.OrderEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OrderEdit.BackgroundImage")));
-            this.OrderEdit.ButtonText = "EDIT";
-            this.OrderEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.OrderEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderEdit.ForeColor = System.Drawing.Color.SeaGreen;
-            this.OrderEdit.IdleBorderThickness = 1;
-            this.OrderEdit.IdleCornerRadius = 20;
-            this.OrderEdit.IdleFillColor = System.Drawing.Color.PaleGreen;
-            this.OrderEdit.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.OrderEdit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.OrderEdit.Location = new System.Drawing.Point(443, 128);
-            this.OrderEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.OrderEdit.Name = "OrderEdit";
-            this.OrderEdit.Size = new System.Drawing.Size(136, 33);
-            this.OrderEdit.TabIndex = 68;
-            this.OrderEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.OrderEdit.Click += new System.EventHandler(this.OrderEdit_Click);
-            // 
             // OrderDelete
             // 
             this.OrderDelete.ActiveBorderThickness = 1;
@@ -411,7 +240,7 @@ namespace library
             this.OrderDelete.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.OrderDelete.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.OrderDelete.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.OrderDelete.Location = new System.Drawing.Point(669, 128);
+            this.OrderDelete.Location = new System.Drawing.Point(799, 128);
             this.OrderDelete.Margin = new System.Windows.Forms.Padding(4);
             this.OrderDelete.Name = "OrderDelete";
             this.OrderDelete.Size = new System.Drawing.Size(136, 33);
@@ -419,12 +248,169 @@ namespace library
             this.OrderDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.OrderDelete.Click += new System.EventHandler(this.OrderDelete_Click);
             // 
+            // OrderEdit
+            // 
+            this.OrderEdit.ActiveBorderThickness = 1;
+            this.OrderEdit.ActiveCornerRadius = 20;
+            this.OrderEdit.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
+            this.OrderEdit.ActiveForecolor = System.Drawing.Color.LightSalmon;
+            this.OrderEdit.ActiveLineColor = System.Drawing.Color.LimeGreen;
+            this.OrderEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.OrderEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OrderEdit.BackgroundImage")));
+            this.OrderEdit.ButtonText = "EDIT";
+            this.OrderEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OrderEdit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderEdit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.OrderEdit.IdleBorderThickness = 1;
+            this.OrderEdit.IdleCornerRadius = 20;
+            this.OrderEdit.IdleFillColor = System.Drawing.Color.PaleGreen;
+            this.OrderEdit.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.OrderEdit.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.OrderEdit.Location = new System.Drawing.Point(573, 128);
+            this.OrderEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.OrderEdit.Name = "OrderEdit";
+            this.OrderEdit.Size = new System.Drawing.Size(136, 33);
+            this.OrderEdit.TabIndex = 68;
+            this.OrderEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.OrderEdit.Click += new System.EventHandler(this.OrderEdit_Click);
+            // 
+            // ORDER_ADD
+            // 
+            this.ORDER_ADD.ActiveBorderThickness = 1;
+            this.ORDER_ADD.ActiveCornerRadius = 20;
+            this.ORDER_ADD.ActiveFillColor = System.Drawing.Color.DarkSeaGreen;
+            this.ORDER_ADD.ActiveForecolor = System.Drawing.Color.LightSalmon;
+            this.ORDER_ADD.ActiveLineColor = System.Drawing.Color.LimeGreen;
+            this.ORDER_ADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ORDER_ADD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ORDER_ADD.BackgroundImage")));
+            this.ORDER_ADD.ButtonText = "ADD";
+            this.ORDER_ADD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ORDER_ADD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ORDER_ADD.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ORDER_ADD.IdleBorderThickness = 1;
+            this.ORDER_ADD.IdleCornerRadius = 20;
+            this.ORDER_ADD.IdleFillColor = System.Drawing.Color.PaleGreen;
+            this.ORDER_ADD.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.ORDER_ADD.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.ORDER_ADD.Location = new System.Drawing.Point(387, 128);
+            this.ORDER_ADD.Margin = new System.Windows.Forms.Padding(4);
+            this.ORDER_ADD.Name = "ORDER_ADD";
+            this.ORDER_ADD.Size = new System.Drawing.Size(136, 33);
+            this.ORDER_ADD.TabIndex = 66;
+            this.ORDER_ADD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ORDER_ADD.Click += new System.EventHandler(this.ORDER_ADD_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.label_Reader);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.books_l);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(215, 640);
+            this.panel1.TabIndex = 70;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 604);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 22);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "V1.0";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::library.Properties.Resources.bill;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 381);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(72, 392);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "ORDERS";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::library.Properties.Resources.man_in_suit_and_tie;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 286);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label_Reader
+            // 
+            this.label_Reader.AutoSize = true;
+            this.label_Reader.Location = new System.Drawing.Point(72, 297);
+            this.label_Reader.Name = "label_Reader";
+            this.label_Reader.Size = new System.Drawing.Size(80, 22);
+            this.label_Reader.TabIndex = 4;
+            this.label_Reader.Text = "READER";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::library.Properties.Resources.book;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 199);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // books_l
+            // 
+            this.books_l.AutoSize = true;
+            this.books_l.Location = new System.Drawing.Point(72, 210);
+            this.books_l.Name = "books_l";
+            this.books_l.Size = new System.Drawing.Size(69, 22);
+            this.books_l.TabIndex = 2;
+            this.books_l.Text = "BOOKS";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "University Library";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::library.Properties.Resources.library_uni;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(915, 520);
+            this.ClientSize = new System.Drawing.Size(1220, 640);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.OrderDelete);
             this.Controls.Add(this.OrderEdit);
             this.Controls.Add(this.OrderGrid);
@@ -437,35 +423,23 @@ namespace library
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "order";
             this.Text = "order";
             this.Load += new System.EventHandler(this.order_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.OrderGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label_Reader;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label books_l;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox BOOKNAME;
         private System.Windows.Forms.Label l_Name;
         private Bunifu.Framework.UI.BunifuDatepicker BORROWDATE;
@@ -478,5 +452,15 @@ namespace library
         private Guna.UI.WinForms.GunaDataGridView OrderGrid;
         private Bunifu.Framework.UI.BunifuThinButton2 OrderEdit;
         private Bunifu.Framework.UI.BunifuThinButton2 OrderDelete;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label_Reader;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label books_l;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

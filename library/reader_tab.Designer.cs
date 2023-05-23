@@ -33,12 +33,6 @@ namespace library
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reader_tab));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label_Reader = new System.Windows.Forms.Label();
-            this.books_l = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ReadderAddress = new System.Windows.Forms.TextBox();
@@ -50,99 +44,32 @@ namespace library
             this.ReaderGrid = new Guna.UI.WinForms.GunaDataGridView();
             this.ReaderBirth = new Bunifu.Framework.UI.BunifuDatepicker();
             this.ReaderDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ReaderEdit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.READER_ADD = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label_Reader = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.books_l = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ReaderGrid)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label_Reader);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.books_l);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(161, 520);
-            this.panel1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 491);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "V1.0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 12F);
-            this.label3.Location = new System.Drawing.Point(54, 318);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "ORDERS";
-            // 
-            // label_Reader
-            // 
-            this.label_Reader.AutoSize = true;
-            this.label_Reader.Font = new System.Drawing.Font("Montserrat", 12F);
-            this.label_Reader.Location = new System.Drawing.Point(54, 241);
-            this.label_Reader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_Reader.Name = "label_Reader";
-            this.label_Reader.Size = new System.Drawing.Size(80, 22);
-            this.label_Reader.TabIndex = 4;
-            this.label_Reader.Text = "READER";
-            // 
-            // books_l
-            // 
-            this.books_l.AutoSize = true;
-            this.books_l.Font = new System.Drawing.Font("Montserrat", 12F);
-            this.books_l.Location = new System.Drawing.Point(54, 171);
-            this.books_l.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.books_l.Name = "books_l";
-            this.books_l.Size = new System.Drawing.Size(69, 22);
-            this.books_l.TabIndex = 2;
-            this.books_l.Text = "BOOKS";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "University Library";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(688, 47);
+            this.label8.Location = new System.Drawing.Point(831, 64);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 21);
@@ -154,7 +81,7 @@ namespace library
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(544, 50);
+            this.label7.Location = new System.Drawing.Point(677, 69);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 21);
@@ -164,7 +91,7 @@ namespace library
             // ReadderAddress
             // 
             this.ReadderAddress.BackColor = System.Drawing.SystemColors.Window;
-            this.ReadderAddress.Location = new System.Drawing.Point(548, 73);
+            this.ReadderAddress.Location = new System.Drawing.Point(681, 92);
             this.ReadderAddress.Margin = new System.Windows.Forms.Padding(2);
             this.ReadderAddress.Name = "ReadderAddress";
             this.ReadderAddress.Size = new System.Drawing.Size(129, 20);
@@ -175,7 +102,7 @@ namespace library
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(398, 50);
+            this.label6.Location = new System.Drawing.Point(531, 69);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 21);
@@ -185,7 +112,7 @@ namespace library
             // ReaderPhone
             // 
             this.ReaderPhone.BackColor = System.Drawing.SystemColors.Window;
-            this.ReaderPhone.Location = new System.Drawing.Point(402, 73);
+            this.ReaderPhone.Location = new System.Drawing.Point(535, 92);
             this.ReaderPhone.Margin = new System.Windows.Forms.Padding(2);
             this.ReaderPhone.Name = "ReaderPhone";
             this.ReaderPhone.Size = new System.Drawing.Size(129, 20);
@@ -196,7 +123,7 @@ namespace library
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(253, 50);
+            this.label5.Location = new System.Drawing.Point(386, 69);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 21);
@@ -206,7 +133,7 @@ namespace library
             // ReaderName
             // 
             this.ReaderName.BackColor = System.Drawing.SystemColors.Window;
-            this.ReaderName.Location = new System.Drawing.Point(256, 73);
+            this.ReaderName.Location = new System.Drawing.Point(389, 92);
             this.ReaderName.Margin = new System.Windows.Forms.Padding(2);
             this.ReaderName.Name = "ReaderName";
             this.ReaderName.Size = new System.Drawing.Size(129, 20);
@@ -216,7 +143,7 @@ namespace library
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(472, 7);
+            this.label4.Location = new System.Drawing.Point(605, 26);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 33);
@@ -251,14 +178,14 @@ namespace library
             this.ReaderGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.ReaderGrid.EnableHeadersVisualStyles = false;
             this.ReaderGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ReaderGrid.Location = new System.Drawing.Point(174, 172);
+            this.ReaderGrid.Location = new System.Drawing.Point(237, 199);
             this.ReaderGrid.Margin = new System.Windows.Forms.Padding(2);
             this.ReaderGrid.Name = "ReaderGrid";
             this.ReaderGrid.RowHeadersVisible = false;
             this.ReaderGrid.RowHeadersWidth = 51;
             this.ReaderGrid.RowTemplate.Height = 24;
             this.ReaderGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ReaderGrid.Size = new System.Drawing.Size(722, 319);
+            this.ReaderGrid.Size = new System.Drawing.Size(962, 393);
             this.ReaderGrid.TabIndex = 21;
             this.ReaderGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.ReaderGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -290,7 +217,7 @@ namespace library
             this.ReaderBirth.ForeColor = System.Drawing.Color.White;
             this.ReaderBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.ReaderBirth.FormatCustom = null;
-            this.ReaderBirth.Location = new System.Drawing.Point(681, 72);
+            this.ReaderBirth.Location = new System.Drawing.Point(835, 92);
             this.ReaderBirth.Name = "ReaderBirth";
             this.ReaderBirth.Size = new System.Drawing.Size(200, 24);
             this.ReaderBirth.TabIndex = 34;
@@ -314,56 +241,12 @@ namespace library
             this.ReaderDelete.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.ReaderDelete.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.ReaderDelete.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ReaderDelete.Location = new System.Drawing.Point(658, 115);
+            this.ReaderDelete.Location = new System.Drawing.Point(791, 134);
             this.ReaderDelete.Margin = new System.Windows.Forms.Padding(4);
             this.ReaderDelete.Name = "ReaderDelete";
             this.ReaderDelete.Size = new System.Drawing.Size(136, 33);
             this.ReaderDelete.TabIndex = 33;
             this.ReaderDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::library.Properties.Resources.bill;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 310);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(37, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::library.Properties.Resources.man_in_suit_and_tie;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 232);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(37, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::library.Properties.Resources.book;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 162);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 41);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::library.Properties.Resources.library_uni;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // ReaderEdit
             // 
@@ -383,7 +266,7 @@ namespace library
             this.ReaderEdit.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.ReaderEdit.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.ReaderEdit.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ReaderEdit.Location = new System.Drawing.Point(448, 115);
+            this.ReaderEdit.Location = new System.Drawing.Point(611, 134);
             this.ReaderEdit.Margin = new System.Windows.Forms.Padding(4);
             this.ReaderEdit.Name = "ReaderEdit";
             this.ReaderEdit.Size = new System.Drawing.Size(136, 33);
@@ -408,7 +291,7 @@ namespace library
             this.READER_ADD.IdleFillColor = System.Drawing.Color.PaleGreen;
             this.READER_ADD.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.READER_ADD.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.READER_ADD.Location = new System.Drawing.Point(249, 115);
+            this.READER_ADD.Location = new System.Drawing.Point(424, 134);
             this.READER_ADD.Margin = new System.Windows.Forms.Padding(4);
             this.READER_ADD.Name = "READER_ADD";
             this.READER_ADD.Size = new System.Drawing.Size(136, 33);
@@ -416,15 +299,119 @@ namespace library
             this.READER_ADD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.READER_ADD.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.label_Reader);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.books_l);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(215, 640);
+            this.panel1.TabIndex = 35;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 604);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 22);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "V1.0";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::library.Properties.Resources.bill;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 381);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(72, 392);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "ORDERS";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::library.Properties.Resources.man_in_suit_and_tie;
+            this.pictureBox3.Location = new System.Drawing.Point(17, 286);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label_Reader
+            // 
+            this.label_Reader.AutoSize = true;
+            this.label_Reader.Location = new System.Drawing.Point(72, 297);
+            this.label_Reader.Name = "label_Reader";
+            this.label_Reader.Size = new System.Drawing.Size(80, 22);
+            this.label_Reader.TabIndex = 4;
+            this.label_Reader.Text = "READER";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::library.Properties.Resources.book;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 199);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // books_l
+            // 
+            this.books_l.AutoSize = true;
+            this.books_l.Location = new System.Drawing.Point(72, 210);
+            this.books_l.Name = "books_l";
+            this.books_l.Size = new System.Drawing.Size(69, 22);
+            this.books_l.TabIndex = 2;
+            this.books_l.Text = "BOOKS";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(149, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "University Library";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::library.Properties.Resources.library_uni;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // reader_tab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(915, 520);
+            this.ClientSize = new System.Drawing.Size(1220, 640);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ReaderBirth);
             this.Controls.Add(this.ReaderDelete);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ReaderEdit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.READER_ADD);
@@ -440,9 +427,9 @@ namespace library
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "reader_tab";
             this.Text = "reader_tab";
+            ((System.ComponentModel.ISupportInitialize)(this.ReaderGrid)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReaderGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -453,17 +440,6 @@ namespace library
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label_Reader;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label books_l;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 ReaderDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 ReaderEdit;
         private Bunifu.Framework.UI.BunifuThinButton2 READER_ADD;
@@ -477,5 +453,15 @@ namespace library
         private System.Windows.Forms.Label label4;
         private Guna.UI.WinForms.GunaDataGridView ReaderGrid;
         private Bunifu.Framework.UI.BunifuDatepicker ReaderBirth;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label_Reader;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label books_l;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

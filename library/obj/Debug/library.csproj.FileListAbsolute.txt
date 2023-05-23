@@ -18,3 +18,6 @@ E:\collage\DB project\library\obj\Debug\library.admin_signIN.resources
 E:\collage\DB project\library\obj\Debug\library.librerian_register.resources
 E:\collage\DB project\library\obj\Debug\library.readerSignIn.resources
 E:\collage\DB project\library\obj\Debug\library.ReaderSignUP.resources
+E:\collage\DB project\library\obj\Debug\library.READER_Joind.resources
+E:\collage\DB project\library\obj\Debug\library.Reader_MyOrder.resources
+E:\collage\DB project\library\obj\Debug\library.choose.resources

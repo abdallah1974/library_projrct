@@ -51,7 +51,10 @@ namespace library
                     cmd.Parameters.AddWithValue("@AD", AdminADDRESS.Text);
                     cmd.Parameters.AddWithValue("@PW", Password_Regist_Admin.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("LIBRARIAN ADDED");
+                    MessageBox.Show("LIBRARIAN ADDED WITH ID = " + (res + 1));
+                    choose r = new choose();
+                    this.Hide();
+                    r.Show();
                     Con.Close();
 
                 }

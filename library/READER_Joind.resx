@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BOOKSEARCH.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAApCAYAAABz92iRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKWSURBVHhe7dy9a1NRHMZx/yIXFydBRaQOWh20kLSljU3S
+        1Ma2tklbX5o3rTZNchO1BgUdXAShdBPELtJNECqKg6Ag6KAIIoKCwyPPvXg15NixvefwDB/ocJIu34ST
+        k/zOLhQKEHGJohbnKGpxjqIW5yhqcY6iFudsGfXPwgIeVaYwUU8h7iVw0OvH7uopkW3H9thgppHEWmUS
+        34oXjc3Sf6PeKE/jQLMffQ/PYPplCZfeXUX1i4f2r7bItmN7bDD3uozYWhb7WwNYvTJpbLcrar4C8vU0
+        TtwfRf1ry/gPRHZa8/t1xFezSHgj+Fy80NFwR9QM+mhrCFPPF4xPJBI1828u4/hKAh+K581R8x1aQYtt
+        uC3hfrsrau6hueUwPUgk6k4/nsHta9m/UfOUgx8KtYcWW934sYKe9jDeluaDqHlEwk+UpsUitkhvzKG2
+        NBZEzbM/HpWYForYovKximPeUBB1jzeAxU9140IRW3ALsqfWF0S9txbzz/1MC0Vswm8f/aj5h2mBiG0U
+        tThHUYtzFLU4R1GLcxS1OEdRi3MUtTgnjJrfwvDbGNMiEZuEUXP+S6Na4oIwao7EcILAtEjEFvz9En/H
+        5Ed9Z3EciSczxoUitpjYLGC2lgqi5nzXoZuD2leL1U4+yGC9fC6ImprL40iv542LRaIu96KIs41U54wi
+        R7pirQSK75eMDxKJKo4hHm4NhhfchFET57uO3BrWwIBYg0H33h3Bs3Iu7Lgjatos5f27PzJP54xPIhIV
+        s6/K/jv0v0FTV9TErUh1eQy995L+J0pNmUtUcEKL1+DxOrzRZtJ4p54x6j/4CuARyb5G3D/UFtlpHD3k
+        haW8uNTULG0ZtYiNFLU4R1GLcxS1OEdRi2MK+A1SV58EveQiOAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

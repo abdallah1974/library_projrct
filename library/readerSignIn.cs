@@ -12,6 +12,7 @@ namespace library
 {
     public partial class readerSignIn : Form
     {
+        public static string ssn;
         public readerSignIn()
         {
             InitializeComponent();
@@ -42,7 +43,8 @@ namespace library
 
 
                     */
-
+         
+                   
                     SqlCommand cmd = new SqlCommand("SELECT PASSWORD FROM READER WHERE SSN = @ID", Con);
                     //cmd.Parameters.AddWithValue("@global.counter", global.counter, 1, "@BC", BOOKCATEGORY, "@BA", BOOKADD, "@BN", BOOKNAME, "@BR", BOOKINSTOCK);
                     //cmd.Parameters.AddWithValue("@global.counter", global.counter);
@@ -56,7 +58,8 @@ namespace library
                     {
                         MessageBox.Show("LOGED-IN");
                         //this.Hide();
-                        books_tab b = new books_tab();
+                        ssn = SSNLogin.Text;
+                        Reader_MyOrder b = new Reader_MyOrder();
                         b.Show();
                         this.Hide();
                     }

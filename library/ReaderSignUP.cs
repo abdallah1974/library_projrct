@@ -46,6 +46,9 @@ namespace library
                     cmd.Parameters.AddWithValue("@PW", Password_Regist_Admin.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("READER ADDED");
+                    choose r = new choose();
+                    this.Hide();
+                    r.Show();
                     Con.Close();
                     
                 }
